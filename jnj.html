@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="fw-bold fs-2 mb-5">bootstrap form controls </div>
+        <form action="messi.html">
+            <label for="course" class="form-label">choose a course (datalist)</label>
+            <input class="form-control" list="courses" name="course" id="course" placeholder="start typing">
+            <datalist id="courses">
+                <option value="Web design ">Website creating ad publishing</option>
+                 <option value="community health"> ensure people health and  fitness</option>
+                  <option value="accounting ">learn how to balance  supply and demand</option>
+                   <option value="marketing">control the job business </option>
+
+            </datalist>
+            <div class="mt-2">
+<label for="level" class="form-label">select level</label>
+<select name="levels" id="level" class="form-select">
+    <option value="">choose level</option>
+    <option value="basic">level-1</option>
+     <option value="amatuer">level-2</option>
+      <option value="pro">level-3</option>
+       <option value="world class">level-4</option>
+    </div>
+</select>
+<div class="container mt-4">
+
+  <div class="mb-3">Input sizes:</div>
+
+  <div class="row mb-3">
+    
+    <div class="col-lg-10">
+      <input
+        type="text"
+        class="form-control form-control-sm"
+        id="small-size-input"
+        placeholder="Small input">
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    
+    <div class="col-lg-10">
+      <input
+        type="text"
+        class="form-control"
+        id="default-size-input"
+        placeholder="Default input">
+    </div>
+  </div>
+
+ 
+  <div class="row mb-3">
+    
+    <div class="col-lg-10">
+      <input
+        type="text"
+        class="form-control form-control-lg"
+        id="large-size-input"
+        placeholder="Large input">
+    </div>
+  </div>
+
+</div>
+<button class="btn btn-primary  mt-3" type="submit" >
+    submit
+</button>
+        </form>
+    
+
+    <script src="js/bootstrap.bundle.min.js" type="text/js"></script>
+</body>
+</html>
