@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">MyShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Laptops</a></li>
+                        <li><a class="dropdown-item" href="#">Phones</a></li>
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal">
+                Cart <span class="badge bg-danger">3</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="network.jpg" class="d-block w-100" height="450">
+        </div>
+        <div class="carousel-item">
+            <img src="cyber.png" class="d-block w-100" height="450">
+        </div>
+        <div class="carousel-item">
+            <img src="web-design-technology-browsing-programming-concept_53876-163260.avif" class="d-block w-100" height="450">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<div class="container py-5">
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="cyber.png" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Laptop Pro</h5>
+                    <p class="card-text text-muted">$850</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p1">
+                        Details
+                    </button>
+                    <div class="collapse mt-3" id="p1">
+                        <div class="card card-body">
+                            High performance laptop with 16GB RAM and SSD storage.
+                        </div>
+                    </div>
+                    <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="network.jpg" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Smartphone X</h5>
+                    <p class="card-text text-muted">$620</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p2">
+                        Details
+                    </button>
+                    <div class="collapse mt-3" id="p2">
+                        <div class="card card-body">
+                            5G smartphone with AMOLED display and long battery life.
+                        </div>
+                    </div>
+                    <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="web-design-technology-browsing-programming-concept_53876-163260.avif" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Wireless Headphones</h5>
+                    <p class="card-text text-muted">$150</p>
+                    <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p3">
+                        Details
+                    </button>
+                    <div class="collapse mt-3" id="p3">
+                        <div class="card card-body">
+                            Noise cancelling wireless headphones with premium sound.
+                        </div>
+                    </div>
+                    <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                3 items in your cart.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
