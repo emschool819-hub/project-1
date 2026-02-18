@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyShop</title>
+    <title>CTE Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -10,12 +10,12 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">MyShop</a>
+        <a class="navbar-brand fw-bold" href="#">CTE Shop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Home</a>
                 </li>
@@ -33,29 +33,79 @@
             <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal">
                 Cart <span class="badge bg-danger">3</span>
             </button>
+            
         </div>
     </div>
 </nav>
+        <div class="text-center mb-4">
+        <h1 class="fw-bold"> Welcome</h1>
+        <p class="text-muted">Click the buttons below to view different sections</p>
+    </div>
 
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="network.jpg" class="d-block w-100" height="450">
+    <ul class="nav nav-pills justify-content-center mb-3" role="tablist">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#home" type="button">Home</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#profile" type="button">Profile</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#messages" type="button">Messages</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#settings" type="button">Settings</button>
+        </li>
+    </ul>
+
+    <div class="tab-content p-4 border rounded shadow-sm">
+        <div class="tab-pane fade show active" id="home">
+            <h4>Welcome Home</h4>
+            <p>This is the home section of the page.</p>
         </div>
-        <div class="carousel-item">
-            <img src="cyber.png" class="d-block w-100" height="450">
+        <div class="tab-pane fade" id="profile">
+            <h4>Profile Section</h4>
+            <p>This is the profile content area.</p>
         </div>
-        <div class="carousel-item">
-            <img src="web-design-technology-browsing-programming-concept_53876-163260.avif" class="d-block w-100" height="450">
+        <div class="tab-pane fade" id="messages">
+            <h4>Messages Section</h4>
+            <p>This is the messages content area.</p>
+        </div>
+        <div class="tab-pane fade" id="settings">
+            <h4>Settings Section</h4>
+            <p>This is the settings content area.</p>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
+
+<div class="container mt-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="network.jpg" class="d-block w-100" height="450">
+            </div>
+            <div class="carousel-item">
+                <img src="cyber.png" class="d-block w-100" height="450">
+            </div>
+            <div class="carousel-item">
+                <img src="web-design-technology-browsing-programming-concept_53876-163260.avif" class="d-block w-100" height="450">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" 
+                type="button" 
+                data-bs-target="#carouselExample" 
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" 
+                type="button" 
+                data-bs-target="#carouselExample" 
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
 </div>
+
 
 <div class="container py-5">
     <div class="row g-4">
@@ -73,6 +123,10 @@
                         <div class="card card-body">
                             High performance laptop with 16GB RAM and SSD storage.
                         </div>
+                    </div>
+                    <div class="mt-2">
+                    <label for="range1" class="form-label">quantity</label>
+                     <input type="range" class="form-range" id="range1">
                     </div>
                     <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">
                         Add to Cart
@@ -95,6 +149,10 @@
                             5G smartphone with AMOLED display and long battery life.
                         </div>
                     </div>
+                    <div class="mt-2">
+                    <label for="range1" class="form-label">quantity</label>
+                     <input type="range" class="form-range" id="range2">
+                    </div>
                     <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">
                         Add to Cart
                     </button>
@@ -116,6 +174,10 @@
                             Noise cancelling wireless headphones with premium sound.
                         </div>
                     </div>
+                    <div class="mt-2">
+                    <label for="range1" class="form-label">quantity</label>
+                     <input type="range" class="form-range" id="range3">
+                    </div>
                     <button class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#cartModal">
                         Add to Cart
                     </button>
@@ -125,6 +187,65 @@
 
     </div>
 </div>
+
+<div class="container py-5">
+
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    
+                    <h4 class="text-center mb-4">contact us</h4>
+
+                    <form>
+                           <div class="row">
+    <div class="col-md-6">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control is-valid" id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Email address</label>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control is-invalid" id="floatingPassword" placeholder="Password" required>
+            <label for="floatingPassword">Password</label>
+        </div>
+    </div>
+</div>
+
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" required>
+                                <option selected disabled>choose category</option>
+                                <option value="1">Smartphone X</option>
+                                <option value="2">Wireless Headphones</option>
+                                <option value="3">Laptop Pro</option>
+                            </select>
+                            <label for="floatingSelect">product category</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment" id="floatingTextarea" style="height: 100px" required></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                        </div>
+
+                         <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberCheck" required>
+                            <label class="form-check-label" for="rememberCheck">accept terms</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary ">
+                            Submit
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+         </div>
+
+
+
+
+
 
 <div class="modal fade" id="cartModal" tabindex="-1">
     <div class="modal-dialog">
